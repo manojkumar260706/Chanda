@@ -1,0 +1,18 @@
+# Chanda — Melodic Constrained Sanskrit Recitation System
+# Python dependencies
+
+indic-transliteration>=2.3.0
+chanda>=0.3.0
+parler-tts>=0.2.0
+transformers>=4.43.0,<=4.46.1
+torch>=2.0.0
+soundfile>=0.12.0
+librosa>=0.10.0
+pydub>=0.25.1
+numpy>=1.24.0
+streamlit>=1.28.0
+
+# Note: ffmpeg must be installed separately and available on PATH
+# Windows: winget install ffmpeg  OR  choco install ffmpeg
+# macOS:   brew install ffmpeg
+# Linux:   sudo apt install ffmpeg
