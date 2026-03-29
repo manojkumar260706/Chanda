@@ -1,10 +1,10 @@
-# 🕉️ Chanda — Melodic Constrained Sanskrit Recitation System (POC)
+# Chanda — Melodic Constrained Sanskrit Recitation System (POC)
 
 A proof-of-concept system that takes Sanskrit verse text as input, analyzes its metrical structure (Chandas), and generates a speech audio file where **rhythm** (syllable duration) and **pitch** (svara movement) are governed by the verse's metrical and melodic framework.
 
 ---
 
-## 📐 Background
+## Background
 
 ### Chandas (Sanskrit Meters)
 Sanskrit poetry is governed by formal metrical systems called **Chandas**. Each verse is composed of syllables classified as:
@@ -24,7 +24,7 @@ The most common meter (used in Bhagavad Gita, Ramayana) — 8 syllables per quar
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Input Text (IAST/ITRANS/Devanagari)
@@ -57,7 +57,7 @@ Input Text (IAST/ITRANS/Devanagari)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Chanda/
@@ -77,7 +77,7 @@ Chanda/
 
 ---
 
-## 🚀 Setup
+## Setup
 
 ### Prerequisites
 - Python 3.10+
@@ -104,7 +104,7 @@ The TTS model (`ai4bharat/indic-parler-tts`, ~3-4 GB) is downloaded from Hugging
 
 ---
 
-## 🎯 Usage
+## Usage
 
 ### Streamlit UI (Recommended)
 ```bash
@@ -131,7 +131,7 @@ python stitch_export.py
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 | Layer | Tool |
 |---|---|
@@ -145,7 +145,7 @@ python stitch_export.py
 
 ---
 
-## ⚠️ Known Limitations & Design Decisions
+## Known Limitations & Design Decisions
 
 1. **Approximate syllable alignment**: Audio is split proportionally by duration weight (sum of L/G units), not via forced-alignment techniques. Syllable boundaries won't be phonetically precise.
 
@@ -159,6 +159,6 @@ python stitch_export.py
 
 ---
 
-## 📜 License
+## License
 
 This project is a proof-of-concept for educational and research purposes.
